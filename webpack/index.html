@@ -1,0 +1,22 @@
+<script src="./dist/bundle.js"></script>
+
+<!-- <script>
+  // TODO 1缺少exports
+  // TODO 2污染全局
+  // TODO 3缺少require
+
+  (function (list) {
+    function require(file) {
+      let exports = {};
+      (function(exports, code) {
+        eval(code)
+      })(exports, list[file])
+      return exports
+    }
+    // 入口执行
+    require('index.js')
+  })({
+    'add.js': 'exports.default = function(a, b) { return a + b }',
+    'index.js': `var add = require('add.js').default;console.log(add(2, 4))`
+  })
+</script> -->
