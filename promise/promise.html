@@ -157,10 +157,12 @@
     }, 2000);
   })
   a.then(res => {
-    console.log(res, this)
+    console.log(res, '1')
     return '222'
+  }).then(function(res) {
+    console.log(res, '2')
   })
-  a.then(res => {
-    console.log(res, this)
+  a.then(function(res) {
+    console.log(res, '3')
   })
 </script>
